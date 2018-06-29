@@ -1,0 +1,7 @@
+#puntuacion_ranking_cont .puntos:hover{
+    cursor: default;
+}
+
+#puntuacion_ranking_cont .puntos{
+    color: black;
+}

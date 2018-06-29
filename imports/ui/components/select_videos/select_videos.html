@@ -1,0 +1,48 @@
+<template name="Select_videos">
+    <div id="order_container" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <nav class="navbar navbar-inverse col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3" role="navigation">
+            <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <li class="dropdown col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> 1<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {{#each jug1}}
+                            <li>
+                                <a href="#" class="videos_li"><span class="glyphicon glyphicon-hand-right"></span> {{nombre}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="dropdown col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> 2<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {{#each jug2}}
+                            <li>
+                                <a href="#" class="videos_li"><span class="glyphicon glyphicon-hand-right"></span> {{nombre}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="dropdown col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> 3<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {{#each jug3}}
+                            <li>
+                                <a href="#" class="videos_li"><span class="glyphicon glyphicon-hand-right"></span> {{nombre}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="dropdown col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> 4<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {{#each jug4}}
+                            <li>
+                                <a href="#" class="videos_li"><span class="glyphicon glyphicon-hand-right"></span> {{nombre}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</template>

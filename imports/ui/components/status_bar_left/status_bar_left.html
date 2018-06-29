@@ -1,0 +1,33 @@
+<template name="Status_bar_left">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <button class="btn btn-primary btn-circle center-block number_consumibles consu_gyn">{{consumibles.gyn_tonic}}</button>
+                <img src="{{imgGyn.url}}" alt="{{imgGyn.alt}}" class="img-responsive center-block img_consumibles consu_gyn" id="gyn">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <button class="btn btn-success btn-circle center-block number_consumibles consu_bizcocho">{{consumibles.bizcocho_risa}}</button>
+                <img src="{{imgBizcocho.url}}" alt="{{imgBizcocho.alt}}" class="img-responsive center-block img_consumibles consu_bizcocho" id="bizcocho">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <button class="btn btn-warning btn-circle center-block number_consumibles consu_caramelo">{{consumibles.caramelo_energetico}}</button>
+                <img src="{{imgCaramelo.url}}" alt="{{imgCaramelo.alt}}" class="img-responsive center-block img_consumibles consu_caramelo" id="caramelo">
+            </div>
+            <div id="statusHome" class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" id="sed" role="progressbar" aria-valuenow="{{stats.sed}}" aria-valuemin="0" aria-valuemax="100" style="width:{{stats.sed}}%"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" id="alegria" role="progressbar" aria-valuenow="{{stats.alegria}}" aria-valuemin="0" aria-valuemax="100" style="width:{{stats.alegria}}%"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" id="cansancio" role="progressbar" aria-valuenow="{{stats.cansancio}}" aria-valuemin="0" aria-valuemax="100" style="width:{{stats.cansancio}}%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

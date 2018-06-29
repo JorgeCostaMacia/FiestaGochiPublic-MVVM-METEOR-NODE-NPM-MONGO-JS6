@@ -1,0 +1,42 @@
+.barVertical span{
+    background: yellow;
+}
+
+.barHorizontal span{
+    background: yellow;
+}
+
+.barVertical{
+    cursor:pointer;
+}
+
+.barHorizontal{
+    cursor:pointer;
+}
+
+#puntuacion{
+    background: white;
+    color: black;
+}
+
+.barHorizontal span{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+@media (min-width: 992px){
+    .barVertical span{
+        margin-top: 35vh;
+        margin-bottom: 35vh;
+    }
+}
+
+@media (max-width: 991px){
+    #arriba{
+        margin-top: 50px;
+    }
+    .barVertical span{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+}

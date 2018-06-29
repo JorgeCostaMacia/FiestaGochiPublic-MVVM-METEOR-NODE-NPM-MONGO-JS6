@@ -1,0 +1,17 @@
+<template name="Puntuacion_ranking">
+    <div class="container-fluid" id="puntuacion_ranking_cont">
+        {{#each puntuacion}}
+            <div class="form-horizontal">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">{{nick}}</span></legend>
+                <div class="form-group">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                        <div class="alert alert-success puntos text-center">
+                            <span>{{lvl}} - </span>
+                            <span>{{puntos}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</template>

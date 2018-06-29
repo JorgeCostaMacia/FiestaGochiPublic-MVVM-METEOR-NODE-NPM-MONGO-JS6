@@ -1,0 +1,15 @@
+<template name="Page_juego">
+    {{> Nav_home}}
+    <main id="main_juego">
+        <div class="container-fluid" id="loginContainer">
+            <div class="row-fluid">
+                <div class="barHorizontal img-rounded col-lg-12 col-lg-12 col-lg-12 col-xs-12 text-center" id="arriba"><span class="glyphicon glyphicon-arrow-up img-rounded"></span></div>
+                <div class="barVertical img-rounded col-lg-1 col-md-1 col-sm-2 col-xs-2 text-center" id="izquierda"><span class="glyphicon glyphicon-arrow-left img-rounded"></span></div>
+                {{> Personaje}}
+                <div class="barVertical img-rounded col-lg-1 col-md-1 col-sm-2 col-xs-2 text-center" id="derecha"><span class="glyphicon glyphicon-arrow-right img-rounded"></span></div>
+                <div class="barHorizontal img-rounded col-lg-12 col-lg-12 col-lg-12 col-xs-12 text-center" id="abajo"><span class="glyphicon glyphicon-arrow-down img-rounded"></span></div>
+                <div class="img-rounded col-lg-12 col-lg-12 col-lg-12 col-xs-12 text-center" id="puntuacion">0</div>
+            </div>
+        </div>
+    </main>
+</template>

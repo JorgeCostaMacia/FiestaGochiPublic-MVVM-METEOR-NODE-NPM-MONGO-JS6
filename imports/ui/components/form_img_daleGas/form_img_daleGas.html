@@ -1,0 +1,22 @@
+<template name="Form_img_daleGas">
+    <form id="form_img_daleGas" class="form-horizontal">
+        <legend><span class="col-lg-offset-1 col-md-offset-1">Imagen Dale Gas</span></legend>
+        <div class="form-group">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="nombre_mod_img_daleGas" class="form-control" placeholder="Nombre" maxlength="30" value="{{imagenDaleGas.nombre}}" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="button" id="verImagenDaleGas" data-toggle="tooltip" title="Ver imágen" class="btn-warning form-control"><span class="glyphicon glyphicon-picture"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="alt_mod_img_daleGas" class="form-control" placeholder="Alt" maxlength="30" value="{{imagenDaleGas.alt}}" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="submit" data-toggle="tooltip" title="Guardar imágen" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="url" id="url_mod_img_daleGas" class="form-control" placeholder="http://Url" maxlength="100" value="{{imagenDaleGas.url}}" required>
+            </div>
+        </div>
+    </form>
+</template>

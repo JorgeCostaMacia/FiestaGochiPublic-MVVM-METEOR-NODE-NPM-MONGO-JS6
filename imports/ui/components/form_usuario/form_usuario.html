@@ -1,0 +1,19 @@
+<template name="Form_usuario">
+    <form id="form_add_usuario" class="form-horizontal">
+        <legend><span class="col-lg-offset-1 col-md-offset-1">Nuevo usuario</span></legend>
+        <div class="form-group">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="nick_add_usuario" class="form-control" placeholder="Nick" maxlength="15" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="submit" data-toggle="tooltip" title="Guardar canción" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="email" id="email_add_usuario" class="form-control" placeholder="Email" maxlength="40" required>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="password" id="pass_add_usuario" class="form-control" placeholder="Contraseña" minlength="8" maxlength="15" required>
+            </div>
+        </div>
+    </form>
+</template>

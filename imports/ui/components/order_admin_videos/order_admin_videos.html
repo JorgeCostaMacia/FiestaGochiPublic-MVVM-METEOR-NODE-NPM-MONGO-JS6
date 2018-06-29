@@ -1,0 +1,29 @@
+<template name="Order_admin_videos">
+    <div id="order_container" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <nav class="navbar navbar-inverse col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2" role="navigation">
+            <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+                    <a href="#" id="nombreOrder">Nombre
+                        {{#if nombreOrderActive}}
+                            <span class="{{orderType}}"></span>
+                        {{/if}}
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12  text-center">
+                    <a href="#" id="urlOrder">Url
+                        {{#if urlOrderActive}}
+                            <span class="{{orderType}}"></span>
+                        {{/if}}
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12  text-center">
+                    <a href="#" id="jugadoresOrder">Jugadores
+                        {{#if jugadoresOrderActive}}
+                            <span class="{{orderType}}"></span>
+                        {{/if}}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template name="Status_bar_right">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pull-right">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="{{energia}}" aria-valuemin="0" aria-valuemax="100" style="width:{{energia}}%"></div>
+                </div>
+            </div>
+            {{#if existJuego}}
+                <div class="col-lg-12 col-md-12 {{existDos}}">
+                    <img src="{{imgDaleGas.url}}" alt="{{imgDaleGas.alt}}" class="img-responsive center-block" id="daleGas">
+                </div>
+            {{/if}}
+            {{#if existRecarga}}
+                <div class="col-lg-12 col-md-12 {{existDos}}">
+                    <img src="{{imgRecarga.url}}" alt="{{imgRecarga.alt}}" class="img-responsive center-block" id="recarga">
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</template>

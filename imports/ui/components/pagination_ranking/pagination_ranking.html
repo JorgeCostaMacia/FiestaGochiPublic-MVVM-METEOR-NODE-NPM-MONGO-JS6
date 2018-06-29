@@ -1,0 +1,18 @@
+<template name="Pagination_ranking">
+    <nav id="pag_container" aria-label="">
+        <ul class="pagination pull-right">
+            <li class="page-item {{anterior}}">
+                <a class="page-link" id="anterior" href="#">Anterior</a>
+            </li>
+            <li class="page-item active">
+                <span class="page-link">
+                    {{pageActual}}
+                <span class="sr-only">(current)</span>
+                </span>
+            </li>
+            <li class="page-item {{siguiente}}">
+                <a class="page-link" id="siguiente" href="#">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+</template>

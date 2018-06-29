@@ -1,0 +1,42 @@
+*{
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+    font-weight: bold;
+    list-style: none;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+legend{
+    color:white;
+    cursor: default;
+}
+
+.soloView{
+    cursor: default;
+}
+
+.separador{
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+}
+
+.separador-2{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+}
+
+.separador-3{
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+}

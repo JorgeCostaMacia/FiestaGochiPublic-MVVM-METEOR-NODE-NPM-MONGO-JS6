@@ -1,0 +1,43 @@
+<template name="Nav_home">
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">FiestaGochi</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="{{homeActive}}">
+                        <a href="/">
+                            <span class="glyphicon glyphicon-home"></span> Home
+                        </a>
+                    </li>
+                    <li class="{{foroActive}}">
+                        <a href="/foro">
+                            <span class="glyphicon glyphicon-comment"></span> Foro
+                        </a>
+                    </li>
+                    <li class="{{rankingActive}}">
+                        <a href="/ranking">
+                            <span class="glyphicon glyphicon-flag"></span> Ranking
+                        </a>
+                    </li>
+                    <li class="{{videosActive}}">
+                        <a href="/videos">
+                            <span class="glyphicon glyphicon-film"></span> Videos
+                        </a>
+                    </li>
+                    {{> Nav_solo_view}}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    {{> Nav_audio}}
+                    {{> Nav_usuario}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

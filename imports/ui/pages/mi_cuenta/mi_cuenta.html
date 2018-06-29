@@ -1,0 +1,102 @@
+<template name="Page_mi_cuenta">
+    {{> Nav_home}}
+    <main id="main_mi_cuenta">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Nick</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                {{currentUser.username}}
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button id="butModNick" data-toggle="tooltip" title="Modificar nick" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                        </div>
+                    </div>
+                    {{#if modNickActive}}
+                        {{> Form_cambiar_nick}}
+                    {{/if}}
+                </div>
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Email</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                {{email}}
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button id="butModEmail" data-toggle="tooltip" title="Modificar email" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                        </div>
+                    </div>
+                    {{#if modEmailActive}}
+                        {{> Form_cambiar_email}}
+                    {{/if}}
+                </div>
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Avisos</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                {{currentUser.profile.avisos}}
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button id="butModAvisos" data-toggle="tooltip" title="Modificar avisos" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                        </div>
+                    </div>
+                    {{#if modAvisosActive}}
+                        {{> Form_cambiar_avisos}}
+                    {{/if}}
+                </div>
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Contraseña</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                ********
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button id="butModPass" data-toggle="tooltip" title="Modificar contraseña" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                        </div>
+                    </div>
+                    {{#if modPassActive}}
+                        {{> Form_cambiar_password}}
+                    {{/if}}
+                </div>
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Personaje</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                {{nombrePersonaje}}
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button id="butModPj" data-toggle="tooltip" title="Modificar personaje" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                        </div>
+                    </div>
+                    {{#if modPjActive}}
+                        {{> Pj_carousel}}
+                    {{/if}}
+                </div>
+                <div class="form-horizontal">
+                    <legend><span class="col-lg-offset-1 col-md-offset-1">Nivel</span></legend>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                            <div class="form-control valor_actual">
+                                {{lvl}}
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                            <button data-toggle="tooltip" title="Reiniciar partida" id="resetPartida" class="btn-danger form-control"><span class="glyphicon glyphicon-remove"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

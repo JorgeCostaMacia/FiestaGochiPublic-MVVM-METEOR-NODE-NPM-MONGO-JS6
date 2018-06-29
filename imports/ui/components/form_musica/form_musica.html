@@ -1,0 +1,19 @@
+<template name="Form_musica">
+    <form id="form_add_musica" class="form-horizontal">
+        <legend><span class="col-lg-offset-1 col-md-offset-1">Nueva canción</span></legend>
+        <div class="form-group">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="nombre_add_musica" class="form-control" placeholder="Nombre" maxlength="30" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="button" id="escucharCancion" data-toggle="tooltip" title="Escuchar canción" class="btn-warning form-control"><span class="glyphicon glyphicon-volume-up"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="url" id="url_add_musica" class="form-control" placeholder="http://Url" maxlength="100" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="submit" data-toggle="tooltip" title="Guardar canción" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+            </div>
+        </div>
+    </form>
+</template>

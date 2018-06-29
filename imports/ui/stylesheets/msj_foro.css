@@ -1,0 +1,12 @@
+#msj_foro_cont .mensaje_text:hover{
+    cursor: default;
+}
+
+#msj_foro_cont .mensaje_text{
+    color: black;
+}
+
+#msj_foro_cont .mensaje_fecha{
+    color:white;
+    cursor: default;
+}

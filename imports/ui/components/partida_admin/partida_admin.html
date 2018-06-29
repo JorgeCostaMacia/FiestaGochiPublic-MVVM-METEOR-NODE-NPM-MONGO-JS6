@@ -1,0 +1,39 @@
+<template name="Partida_admin">
+    <div class="form-horizontal">
+        <form id="form_partida">
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Stats más 100</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="statsMas100" min="0" max="100" step="1" value="{{partida.statsMas100}}" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button type="submit" data-toggle="tooltip" title="Guardar partida" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Stats más 50</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="statsMas50" min="0" max="100" step="1" value="{{partida.statsMas50}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Consumibles recarga</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="consuRecarga" min="0" max="100" step="1" value="{{partida.consuRecarga}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Jugar stats</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="jugarStats" min="0" max="100" step="1" value="{{partida.jugarStats}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Jugar energía</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="jugarEnergia" min="0" max="100" step="1" value="{{partida.jugarEnergia}}" required>
+                </div>
+            </div>
+        </form>
+    </div>
+</template>

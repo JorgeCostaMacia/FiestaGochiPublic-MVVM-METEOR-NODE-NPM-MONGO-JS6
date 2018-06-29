@@ -1,0 +1,23 @@
+<template name="Form_registro">
+    <form id="register-form" action="#" class="hidden" method="post" role="form">
+        <div class="form-group">
+            <input type="text" name="regNick" id="regNick" tabindex="1" maxlength="15" class="form-control" placeholder="Nick" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="regEmail" id="regEmail" tabindex="2" maxlength="40" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="regPass" id="regPass" tabindex="3" minlength="8" maxlength="15" class="form-control" placeholder="Contraseña" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="regPassConf" id="regPassConf" tabindex="4" minlength="8" maxlength="15" class="form-control" placeholder="Repita la contraseña" required>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <input type="submit" name="register-submit" id="register-submit" tabindex="5" class="form-control btn btn-register" value="Registrar">
+                </div>
+            </div>
+        </div>
+    </form>
+</template>

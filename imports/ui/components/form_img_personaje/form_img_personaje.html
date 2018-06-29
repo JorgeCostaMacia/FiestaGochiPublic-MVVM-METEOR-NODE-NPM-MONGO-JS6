@@ -1,0 +1,34 @@
+<template name="Form_img_personaje">
+    <form id="form_img_personaje" class="form-horizontal">
+        <legend><span class="col-lg-offset-1 col-md-offset-1">Nuevo Personaje</span></legend>
+        <div class="form-group">
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="nombre_add_personaje" class="form-control" placeholder="Nombre" maxlength="30" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="button" id="verImagenPersonajePng" data-toggle="tooltip" title="Ver imágen png" class="btn-warning form-control"><span class="glyphicon glyphicon-picture"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="text" id="alt_add_personaje" class="form-control" placeholder="Alt" maxlength="50" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="button" id="verImagenPersonajeGif" data-toggle="tooltip" title="Ver imágen gif" class="btn-warning form-control"><span class="glyphicon glyphicon-picture"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="url" id="url_png_add_personaje" class="form-control" placeholder="http://Url_png" maxlength="100" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="button" id="verImagenPersonajeCarrousel" data-toggle="tooltip" title="Ver imágen carrousel" class="btn-warning form-control"><span class="glyphicon glyphicon-picture"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="url" id="url_gif_add_personaje" class="form-control" placeholder="http://Url_gif" maxlength="100" required>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                <button type="submit" data-toggle="tooltip" title="Guardar personaje" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                <input type="url" id="url_carrousel_add_personaje" class="form-control" placeholder="http://Url_carrousel" maxlength="100" required>
+            </div>
+        </div>
+    </form>
+</template>

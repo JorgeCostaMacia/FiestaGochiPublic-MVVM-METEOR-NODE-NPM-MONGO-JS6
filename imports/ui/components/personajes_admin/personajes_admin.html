@@ -1,0 +1,30 @@
+<template name="Personajes_admin">
+    {{#each personajes}}
+        <div class="form-horizontal">
+            <legend><span class="col-lg-offset-1 col-md-offset-1">Id: {{_id}}</span></legend>
+            <form class="form-group form_personaje">
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input class="form-control nombre" value="{{nombre}}" placeholder="Nombre" maxlength="30" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button type="submit" data-toggle="tooltip" title="Modificar personaje" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input class="form-control alt" value="{{alt}}" maxlength="50" placeholder="Alt" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button data-toggle="tooltip" title="Borrar personaje" class="btn-danger form-control borrar_personaje"><span class="glyphicon glyphicon-trash"></span></button>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="url" class="form-control url_png" value="{{url_png}}" placeholder="http://Url_png" maxlength="100" required>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="url" class="form-control url_gif" value="{{url_gif}}" placeholder="http://Url_gif" maxlength="100" required>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="url" class="form-control url_carrousel" value="{{url_carrousel}}" placeholder="http://Url_carrousel" maxlength="100" required>
+                </div>
+            </form>
+        </div>
+    {{/each}}
+</template>

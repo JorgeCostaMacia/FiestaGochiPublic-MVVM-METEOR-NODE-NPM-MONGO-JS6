@@ -1,0 +1,37 @@
+<template name="Usuarios_admin">
+    {{#each usuarios}}
+        <div class="form-horizontal">
+            <legend><span class="col-lg-offset-1 col-md-offset-1">Id: {{_id}}</span></legend>
+            <form class="form-group form_usuario">
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input class="form-control nick" value="{{username}}" placeholder="Nick" maxlength="30" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button type="submit" data-toggle="tooltip" title="Modificar usuario" class="btn-warning form-control"><span class="glyphicon glyphicon-edit"></span></button>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="email" class="form-control email" value="{{email this}}" placeholder="Email" maxlength="100" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button data-toggle="tooltip" title="Borrar usuario" class="btn-danger form-control borrar_usuario"><span class="glyphicon glyphicon-trash"></span></button>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    {{#if verificado this}}
+                        <input type="text" class="form-control" value="Verificado" disabled>
+                    {{else}}
+                        <input type="text" class="form-control" value="No verificado" disabled>
+                    {{/if}}
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <select class="form-control avisos" required>
+                        <option value="Recibir" {{avisosSi this}}>Recibir</option>
+                        <option value="No recibir" {{avisosNo this}}>No recibir</option>
+                    </select>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <span class="pull-right creacion_fecha">{{formatDate createdAt}}</span>
+                </div>
+            </form>
+        </div>
+    {{/each}}
+</template>

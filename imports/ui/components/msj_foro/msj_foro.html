@@ -1,0 +1,17 @@
+<template name="Msj_foro">
+    <div class="container-fluid" id="msj_foro_cont">
+        {{#each mensajes}}
+            <legend><span class="col-lg-offset-1 col-md-offset-1">{{nick}}</span></legend>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                        <div class="alert alert-success mensaje_text">
+                            {{mensaje}}
+                        </div>
+                        <span class="pull-right mensaje_fecha">{{formatDate date}}</span>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</template>

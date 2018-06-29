@@ -1,0 +1,33 @@
+<template name="Page_login">
+    {{> Nav_login}}
+    <main id="main_login">
+        <div class="container-fluid" id="loginContainer">
+            <div class="row-fluid">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                                    <a href="#" class="active" id="login-form-link">Acceso</a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                                    <a href="#" id="register-form-link">Registro</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    {{> Form_login}}
+                                    {{> Form_recuperar}}
+                                    {{> Form_registro}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

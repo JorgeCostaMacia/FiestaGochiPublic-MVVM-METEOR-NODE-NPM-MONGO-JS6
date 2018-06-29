@@ -1,0 +1,21 @@
+<template name="Nav_usuario">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> {{currentUser.username}}<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/mi_cuenta"><span class="glyphicon glyphicon-cog"></span> Mi cuenta</a></li>
+            {{#if userAdmin}}
+                <li role="separator" class="divider"></li>
+                <li><a href="/admin_cuentas"><span class="glyphicon glyphicon-cog"></span> Cuentas</a></li>
+                <li><a href="/admin_imagenes"><span class="glyphicon glyphicon-cog"></span> Imágenes</a></li>
+                <li><a href="/admin_personajes"><span class="glyphicon glyphicon-cog"></span> Personajes</a></li>
+                <li><a href="/admin_musica"><span class="glyphicon glyphicon-cog"></span> Música</a></li>
+                <li><a href="/admin_videos"><span class="glyphicon glyphicon-cog"></span> Videos</a></li>
+                <li><a href="/admin_parametros_cron"><span class="glyphicon glyphicon-cog"></span> Cron</a></li>
+                <li><a href="/admin_parametros_partida"><span class="glyphicon glyphicon-cog"></span> Partida</a></li>
+                <li><a href="/admin_parametros_juego"><span class="glyphicon glyphicon-cog"></span> Juego</a></li>
+            {{/if}}
+            <li role="separator" class="divider"></li>
+            <li><a href="#" id="logout"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
+        </ul>
+    </li>
+</template>

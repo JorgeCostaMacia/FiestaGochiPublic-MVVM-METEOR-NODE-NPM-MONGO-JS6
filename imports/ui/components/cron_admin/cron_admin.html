@@ -1,0 +1,69 @@
+<template name="Cron_admin">
+    <div class="form-horizontal">
+        <form id="form_cron">
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Interval</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="interval" min="1" max="100000000000" step="1" value="{{cron.interval}}" required>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <button type="submit" data-toggle="tooltip" title="Guardar cron" class="btn-danger form-control"><span class="glyphicon glyphicon-check"></span></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Interval stats</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="interval_stats" min="1" max="100" step="1" value="{{cron.interval_stats}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Interval consumibles</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="interval_consumibles" min="1" max="100" step="1" value="{{cron.interval_consumibles}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 50 Uno</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosUno50" min="0" max="100" step="1" value="{{cron.menosUno50}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 50 Dos</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosDos50" min="0" max="100" step="1" value="{{cron.menosDos50}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 50 Tres</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosTres50" min="0" max="100" step="1" value="{{cron.menosTres50}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 30 Uno</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosUno30" min="0" max="100" step="1" value="{{cron.menosUno30}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 30 Dos</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosDos30" min="0" max="100" step="1" value="{{cron.menosDos30}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos 30 Tres</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosTres30" min="0" max="100" step="1" value="{{cron.menosTres30}}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <legend><span class="col-lg-offset-1 col-md-offset-1">Menos stats</span></legend>
+                <div class="col-lg-5 col-md-5 col-sm-9 col-xs-9 col-lg-offset-3 col-md-offset-3">
+                    <input type="number" class="form-control" id="menosStats" min="0" max="100" step="1" value="{{cron.menosStats}}" required>
+                </div>
+            </div>
+        </form>
+    </div>
+</template>

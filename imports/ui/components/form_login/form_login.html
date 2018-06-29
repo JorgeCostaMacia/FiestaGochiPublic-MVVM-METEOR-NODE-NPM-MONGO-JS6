@@ -1,0 +1,20 @@
+<template name="Form_login">
+    <form id="login-form" action="/" method="post" role="form">
+        <div class="form-group">
+            <input type="email" name="logEmail" id="logEmail" maxlength="40" tabindex="1" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="logPass" id="logPass" minlength="8" maxlength="15" tabindex="2" class="form-control" placeholder="Contraseña" required>
+        </div>
+        <div class="form-group text-center">
+            <a href="#" name="reco-form-link" id="reco-form-link" tabindex="3">Olvide mi contraseña</a>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Acceder">
+                </div>
+            </div>
+        </div>
+    </form>
+</template>
